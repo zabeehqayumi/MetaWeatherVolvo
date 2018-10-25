@@ -12,9 +12,11 @@
 		4E9CA22121825CAA008E0502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9CA21F21825CAA008E0502 /* Main.storyboard */; };
 		4E9CA22321825CAE008E0502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9CA22221825CAE008E0502 /* Assets.xcassets */; };
 		4E9CA22621825CAE008E0502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9CA22421825CAE008E0502 /* LaunchScreen.storyboard */; };
+		65BFBBAF4315C2305F528A33 /* Pods_MetaWeatherVolvo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45353E34237DC069EE503C48 /* Pods_MetaWeatherVolvo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45353E34237DC069EE503C48 /* Pods_MetaWeatherVolvo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaWeatherVolvo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9CA21821825CAA008E0502 /* MetaWeatherVolvo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaWeatherVolvo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9CA21B21825CAA008E0502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9CA21D21825CAA008E0502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4E9CA22221825CAE008E0502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9CA22521825CAE008E0502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9CA22721825CAE008E0502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD2E54A6EE7B5276F70A5DA2 /* Pods-MetaWeatherVolvo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaWeatherVolvo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaWeatherVolvo/Pods-MetaWeatherVolvo.debug.xcconfig"; sourceTree = "<group>"; };
+		FA25631C6AA3EF2998F67882 /* Pods-MetaWeatherVolvo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaWeatherVolvo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaWeatherVolvo/Pods-MetaWeatherVolvo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BFBBAF4315C2305F528A33 /* Pods_MetaWeatherVolvo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4E9CA21A21825CAA008E0502 /* MetaWeatherVolvo */,
 				4E9CA21921825CAA008E0502 /* Products */,
+				87A21E492B0137C3DBEC65D2 /* Pods */,
+				8BBF9CF95654F8AF041F4E01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MetaWeatherVolvo;
 			sourceTree = "<group>";
 		};
+		87A21E492B0137C3DBEC65D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD2E54A6EE7B5276F70A5DA2 /* Pods-MetaWeatherVolvo.debug.xcconfig */,
+				FA25631C6AA3EF2998F67882 /* Pods-MetaWeatherVolvo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BBF9CF95654F8AF041F4E01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45353E34237DC069EE503C48 /* Pods_MetaWeatherVolvo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E9CA22A21825CAE008E0502 /* Build configuration list for PBXNativeTarget "MetaWeatherVolvo" */;
 			buildPhases = (
+				60149581F3ADFEE2627F9C4B /* [CP] Check Pods Manifest.lock */,
 				4E9CA21421825CAA008E0502 /* Sources */,
 				4E9CA21521825CAA008E0502 /* Frameworks */,
 				4E9CA21621825CAA008E0502 /* Resources */,
+				B6BAD57C944342E5B00E0B15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60149581F3ADFEE2627F9C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaWeatherVolvo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BAD57C944342E5B00E0B15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MetaWeatherVolvo/Pods-MetaWeatherVolvo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetaWeatherVolvo/Pods-MetaWeatherVolvo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E9CA21421825CAA008E0502 /* Sources */ = {
@@ -280,6 +345,7 @@
 		};
 		4E9CA22B21825CAE008E0502 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2E54A6EE7B5276F70A5DA2 /* Pods-MetaWeatherVolvo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +363,7 @@
 		};
 		4E9CA22C21825CAE008E0502 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA25631C6AA3EF2998F67882 /* Pods-MetaWeatherVolvo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
